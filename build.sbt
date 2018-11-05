@@ -8,6 +8,4 @@ libraryDependencies += "org.apache.spark" %% "spark-core" % sparkVersion % "prov
 libraryDependencies += "org.apache.spark" %% "spark-streaming" % sparkVersion % "provided"
 libraryDependencies += ("org.apache.spark" %% "spark-streaming-kafka-0-8" % sparkVersion) exclude ("org.spark-project.spark", "unused")
 
-ivyScala := ivyScala.value map { _.copy(overrideScalaVersion = true) }
-
 assemblyJarName in assembly := name.value + ".jar"
